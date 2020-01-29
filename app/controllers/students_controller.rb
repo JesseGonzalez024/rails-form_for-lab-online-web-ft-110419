@@ -13,7 +13,10 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
   def update
-    
+    @student = current_student
+    @student.update(student_params(:first_name, :last_name))
+
+    redirect_to student_path(@student)
   end
   
     private
