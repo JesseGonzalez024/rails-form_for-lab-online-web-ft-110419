@@ -8,9 +8,9 @@ class StudentsController < ApplicationController
   def new 
   end
   def create
-    @student = Student.create(student_params(:title, :room_number))
+    @student = Student.create(student_params(:first_name, :last_name))
     
-    redirect_to @school_class
+    redirect_to @student
   end
   def update
     
