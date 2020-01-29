@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
   
     private
     
-      def 
+      def params_path
         
       end
 
