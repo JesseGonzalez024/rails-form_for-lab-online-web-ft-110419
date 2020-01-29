@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
   
     private
     
-      def params_path
+      def post_params
         
       end
 
